@@ -48,7 +48,7 @@ class TicTacToe
     if valid_move?(index)
       move(index, current_player)
       display_board
-      puts 'Board Space Numbers:'
+      # puts 'Board Space Numbers:'
       # display_board(BOARD_OF_POSITIONS)
     else
       turn
@@ -80,9 +80,9 @@ class TicTacToe
   def play
     turn until over?
     if winner
-      "Congratulations #{winner}!"
+      puts "Congratulations #{winner}!"
     elsif draw?
-      "Cat's Game!"
+      puts "Cat's Game!"
     end
   end
 
